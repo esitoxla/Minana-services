@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
-import ResponsiveMenu from "./Navbar/ResponsiveMenu";
+import ResponsiveMenu from "./ResponsiveMenu";
 import { NavLink, Link } from "react-router";
 
 export default function Navbar() {
