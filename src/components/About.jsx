@@ -6,9 +6,9 @@ export default function About() {
   return (
     <div className="mx-8  my-16 lg:px-16 leading-normal ">
       <div className="flex items-center justify-center mb-12">
-        <div className="flex-1 h-0.5 bg-red-500 max-w-xs"></div>
-        <h1 className="text-2xl md:text-4xl  text-red-600 uppercase px-8">About us</h1>
-        <div className="flex-1 h-0.5 bg-red-500 max-w-xs"></div>
+        <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
+        <h1 className="text-2xl md:text-4xl  text-red-500 uppercase px-8">About us</h1>
+        <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
       </div>
 
       <div className="flex flex-col gap-6 my-9 text-gray-700 ">

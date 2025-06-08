@@ -1,15 +1,18 @@
 import React from 'react'
 
 import About from "../components/About";
-import Products from '../components/Products';
 import Hero from '../components/Hero';
+import ProductSum from '../components/ProductSum';
+import Testimonial from '../components/Testimonial';
+
 
 export default function Home() {
   return (
     <div>
         <Hero/>
         <About/>
-        <Products/>
+        <ProductSum/>
+        <Testimonial/>
     </div>
   )
 }
