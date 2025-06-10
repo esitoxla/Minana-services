@@ -10,25 +10,28 @@ import {
 export default function Testimonial() {
   const testimonials = [
     {
-      name: "Abena Nketsia",
-      product: "Palm oil canned",
+      name: "Gifty Agyeman",
+      product: "Palm oil",
       emoji: "smile",
       rating: 5,
-      comment: "This palm oil brings out flavor in all my dishes!",
+      comment:
+        "Our school has been buying from them for the  last one year for our beans and plantain and other recipes.It's well packaged and has a flavourful taste that our school children love so much. They also have a good customer service and delivery service. It's really great to patronise their business. I never have any problem at all.",
     },
     {
-      name: "Kofi Adu",
+      name: "Frances Adu",
       product: "Coconut oil",
       emoji: "cool",
       rating: 5,
-      comment: "Works wonders in cooking and skincare, best I have bought",
+      comment:
+        "I have used the coconut oil and I must say it's exactly how i wanted it, very clear, no cloudiness and no stale smell. I will always fall on you anytime i need some. I am satisfied with your product. Thank you",
     },
     {
       name: "Yaw Mintah",
       product: "Palm Kernel oil",
       emoji: "laugh",
       rating: 4,
-      comment: "Strong, natural scent. Perfect for my black soap recipe.",
+      comment:
+        "I have used the palm kernel oil and I must say it's just what I was looking for — pure, clean, and free from any unpleasant smell. The quality is top-notch with no cloudiness or impurities. I am really satisfied with this product and will definitely come back for more. Thank you for such great quality!",
     },
   ];
 

@@ -4,6 +4,9 @@ import About from "../components/About";
 import Hero from '../components/Hero';
 import ProductSum from '../components/ProductSum';
 import Testimonial from '../components/Testimonial';
+import GalleryCarousel from '../components/GalleryCarousel';
+import GalleryImages from '../components/GalleryImages';
+
 
 
 export default function Home() {
@@ -13,6 +16,8 @@ export default function Home() {
         <About/>
         <ProductSum/>
         <Testimonial/>
+        <GalleryCarousel/>
+        <GalleryImages/>
     </div>
   )
 }

@@ -1,7 +1,12 @@
 import React from 'react'
+import GalleryCarousel from '../components/GalleryCarousel'
+import GalleryImages from '../components/GalleryImages'
 
 export default function Gallery() {
   return (
-    <div>Gallery</div>
+    <div>
+      <GalleryCarousel/>
+      <GalleryImages/>
+    </div>
   )
 }

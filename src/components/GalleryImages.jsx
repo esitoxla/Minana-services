@@ -1,0 +1,62 @@
+import React from "react";
+import gallery6 from "../assets/images/gallery6.jpeg";
+import gallery7 from "../assets/images/gallery7.jpeg";
+import image1 from "../assets/images/cannedPalmoil.jpeg";
+import product2 from "../assets/images/product2.jpeg";
+import gallery8 from "../assets/images/gallery8.jpeg";
+import gallery9 from "../assets/images/gallery9.jpeg";
+
+const gallery = [
+  {
+    image: gallery6,
+    title: "Palm oil",
+  },
+  {
+    image: gallery7,
+    title: "Minana Crop Axis",
+  },
+  {
+    image: gallery8,
+    title: "Palm Stearin",
+  },
+  {
+    image: gallery9,
+    title: "Palm free fatty acids",
+  },
+  {
+    image: image1,
+    title: "Canned Palm oil",
+  },
+  {
+    image: product2,
+    title: "Bottled Palm oil",
+  },
+];
+
+export default function GalleryImages() {
+  return (
+    <>
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {gallery.map((item, index) => (
+            <div
+              key={index}
+              className="relative group overflow-hidden rounded-lg shadow-lg w-[300px] mx-auto"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-fit max-w-full h-64 object-cover mx-auto transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                <h3 className="text-white text-xl font-semibold text-center px-4">
+                  {item.title}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
