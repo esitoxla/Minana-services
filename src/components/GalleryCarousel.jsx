@@ -8,33 +8,28 @@ import gallery5 from "../assets/images/gallery5.jpeg"
 const images = [
   {
     image: gallery1,
-    title: "Sustainable Bed Sheets",
-    description:
-      "Eco-friendly bed sheets crafted from recycled African fabrics",
+    title: "The Dedicated team ",
+    description: "We are a focused, committed to achieving our goals.",
   },
   {
     image: gallery2,
-    title: "Sustainable Bed Sheets",
-    description:
-      "Eco-friendly bed sheets crafted from recycled African fabrics",
+    title: "The Dedicated team ",
+    description: "We are a focused, committed to achieving our goals.",
   },
   {
     image: gallery3,
-    title: "Sustainable Bed Sheets",
-    description:
-      "Eco-friendly bed sheets crafted from recycled African fabrics",
+    title: "The Dedicated team ",
+    description: "We are a focused, committed to achieving our goals.",
   },
   {
     image: gallery4,
-    title: "Sustainable Bed Sheets",
-    description:
-      "Eco-friendly bed sheets crafted from recycled African fabrics",
+    title: "The Dedicated team ",
+    description: "We are a focused, committed to achieving our goals.",
   },
   {
     image: gallery5,
-    title: "Sustainable Bed Sheets",
-    description:
-      "Eco-friendly bed sheets crafted from recycled African fabrics",
+    title: "The Dedicated team ",
+    description: "We are a focused, committed to achieving our goals.",
   },
 ];
 
