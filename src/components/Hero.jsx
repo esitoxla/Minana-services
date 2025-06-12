@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       <section className="overflow-x-hidden">
         <HeroCarousel>
-          <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative m-auto xl:px-12 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative  xl:px-12 py-20">
             {/* info info */}
             <div className="flex flex-col items-center md:items-start justify-center text-center md:text-left px-6 sm:px-10 md:px-16 py-16 leading-relaxed xl:leading-normal ">
               <div className="relative">

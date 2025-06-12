@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import {
   FaFacebookF,
   FaTwitter,
@@ -30,24 +31,24 @@ const Footer = () => {
           <h3 className="font-bold mb-4">Main Menu</h3>
           <ul className="flex flex-col gap-3">
             <li>
-              <a href="#" className="hover:text-green-400">
+              <Link to="/" className="hover:text-green-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400">
+              <Link to="/about" className="hover:text-green-400">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400">
+              <Link to="/product" className="hover:text-green-400">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400">
-                Contact Us
-              </a>
+              <Link to="/gallery" className="hover:text-green-400">
+                Gallery
+              </Link>
             </li>
           </ul>
         </div>
@@ -78,17 +79,13 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h3 className="font-bold ">Contact Us</h3>
           <p>
-            <strong>Address:</strong> 109/1 Village No. 5, Wang Mai, Chumphon
-            City, Thailand
+            <strong>Address:</strong> Juaso Asante Akyem, Ashanti Region, Ghana.
           </p>
           <p>
-            <strong>Reg Number:</strong> 0125550202096
+            <strong>Phone:</strong>+233 54 719 3895
           </p>
           <p>
-            <strong>Phone:</strong> +66814140257
-          </p>
-          <p>
-            <strong>Email:</strong> info@coagricgroup.com
+            <strong>Email:</strong> Philomena@minana.com
           </p>
         </div>
       </div>

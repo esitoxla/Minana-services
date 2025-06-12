@@ -61,7 +61,7 @@ export default function Products() {
       <section className="py-12 lg:px-16  bg-gray-50">
         <div className="flex items-center justify-center mb-12">
           <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
-          <h1 className="text-2xl md:text-4xl uppercase text-red-500  px-8">
+          <h1 className="text-2xl uppercase text-red-500  px-8">
             Products
           </h1>
           <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>

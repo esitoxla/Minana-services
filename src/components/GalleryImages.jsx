@@ -36,17 +36,17 @@ const gallery = [
 export default function GalleryImages() {
   return (
     <>
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="w-full md:px-20  md:py-12 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {gallery.map((item, index) => (
             <div
               key={index}
-              className="relative group overflow-hidden rounded-lg shadow-lg w-[300px] mx-auto"
+              className="relative group overflow-hidden rounded-lg shadow-lg md:w-[350px] "
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-fit max-w-full h-64 object-cover mx-auto transition-transform duration-500 group-hover:scale-110"
+                className="w-fit max-w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
                 <h3 className="text-white text-xl font-semibold text-center px-4">
