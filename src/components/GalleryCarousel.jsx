@@ -47,7 +47,7 @@ export default function GalleryCarousel() {
 
   return (
     <>
-      <div className="flex items-center justify-center pb-12 pt-12">
+      <div className="flex items-center justify-center py-12 px-8">
         <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
         <h1 className="text-2xl uppercase text-red-500  px-8">
           Gallery

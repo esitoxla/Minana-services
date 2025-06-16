@@ -1,5 +1,5 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router";
+
 import RootLayout from "./pages/RootLayout";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
@@ -8,45 +8,43 @@ import ProductPage from "./pages/ProductPage";
 import Gallery from "./pages/Gallery";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
-
-const router = createBrowserRouter([
-
-  {
-    path: "/",
-    Component: RootLayout,
-    errorElement: <NotFoundPage/>,
-    children: [
-      {
-        index: true,
-        Component: Home
-      },
-      {
-        path: "about",
-        Component: AboutPage
-      },
-      {
-        path: "product",
-        Component: ProductPage
-      },
-      {
-        path: "gallery",
-        Component: Gallery
-      },
-      {
-        path: "testimonial",
-        Component: Testimonials
-      },
-      {
-        path: "contact",
-        Component: Contact
-      }
-    ]
-  }
-])
-
+import { createBrowserRouter, RouterProvider } from "react-router";
 
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      Component: RootLayout,
+      errorElement: <NotFoundPage />,
+      children: [
+        {
+          index: true,
+          Component: Home,
+        },
+        {
+          path: "about",
+          Component: AboutPage,
+        },
+        {
+          path: "product",
+          Component: ProductPage,
+        },
+        {
+          path: "gallery",
+          Component: Gallery,
+        },
+        {
+          path: "testimonial",
+          Component: Testimonials,
+        },
+        {
+          path: "contact",
+          Component: Contact,
+        },
+      ],
+    },
+  ]);
 
   return <RouterProvider router={router}/>
 

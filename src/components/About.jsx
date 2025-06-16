@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 export default function About() {
   return (
-    <div className="py-8  px-16 lg:px-24 leading-normal ">
+    <div className="py-8  md:px-16 lg:px-24 leading-normal px-8 ">
       <div className="flex items-center justify-center mb-12">
         <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
         <h1 className="text-2xl  text-red-500 uppercase px-8">About us</h1>

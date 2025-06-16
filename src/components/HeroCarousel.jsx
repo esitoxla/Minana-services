@@ -20,7 +20,7 @@ export default function HeroCaruosel({children}) {
       className="w-full h-full bg-cover bg-center transition-all duration-1000"
       style={{ backgroundImage: `url(${images[current]})` }}
     >
-      <div className="w-full h-screen bg-black/40">{children}</div>
+      <div className="w-full h-full bg-black/40">{children}</div>
     </div>
   );
 }

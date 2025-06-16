@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white pt-10 ">
-      <div className=" mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 text-sm px-16">
+      <div className=" mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 text-sm px-10">
         {/* About Us */}
         <div className="flex flex-col gap-3">
           <h3 className="font-bold ">About Us</h3>
@@ -91,7 +91,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="bg-green-600 text-center py-4 mt-10 text-white text-sm">
+      <div className="bg-green-600 text-center py-4 mt-10 text-white text-sm px-8">
         Copyright © 2025 MINANA SERVICES LIMITED | All rights reserved.
       </div>
     </footer>

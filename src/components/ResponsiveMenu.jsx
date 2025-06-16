@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router";
 
 export default function ResponsiveMenu({ open, setOpen }) {
   return (
@@ -14,12 +15,41 @@ export default function ResponsiveMenu({ open, setOpen }) {
         >
           <div className="text-xl font-semibold uppercase bg-green-500 text-white py-5 m-6 rounded-3xl">
             <ul className="flex flex-col justify-center items-center gap-10">
-              <li onClick={() => setOpen(false)}>Home</li>
-              <li onClick={() => setOpen(false)}>About us</li>
-              <li onClick={() => setOpen(false)}>Products</li>
-              <li onClick={() => setOpen(false)}>Testimonials</li>
-              <li onClick={() => setOpen(false)}>Gallery</li>
-              <li onClick={() => setOpen(false)}>Contact</li>
+              <li>
+                <Link to="/" onClick={() => setOpen(false)}>
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/about" onClick={() => setOpen(false)}>
+                  About us
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/product" onClick={() => setOpen(false)}>
+                  Products
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/testimonial" onClick={() => setOpen(false)}>
+                  Testimonials
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/gallery" onClick={() => setOpen(false)}>
+                  Gallery
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/contact" onClick={() => setOpen(false)}>
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
         </motion.div>

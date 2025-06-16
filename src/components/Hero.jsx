@@ -11,7 +11,7 @@ export default function Hero() {
         <HeroCarousel>
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px] relative  xl:px-12 py-20">
             {/* info info */}
-            <div className="flex flex-col items-center md:items-start justify-center text-center md:text-left px-6 sm:px-10 md:px-16 py-16 leading-relaxed xl:leading-normal ">
+            <div className="flex flex-col items-center md:items-start justify-center text-center md:text-left px-6 sm:px-10 md:px-16 py-16 leading-relaxed xl:leading-normal lg:my-0 md:mx-0 my-16">
               <div className="relative">
                 <div className="absolute left-0 top-1/2 w-18 h-0.5 bg-green-500"></div>
                 <p className="text-white  text-xl xl:max-w-[500px] pl-20">
