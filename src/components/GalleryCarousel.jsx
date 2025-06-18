@@ -14,22 +14,22 @@ const images = [
   {
     image: gallery2,
     title: "The Dedicated team ",
-    description: "We are a focused, committed to achieving our goals.",
+    description: "We are a focused, and committed to achieving our goals.",
   },
   {
     image: gallery3,
     title: "The Dedicated team ",
-    description: "We are a focused, committed to achieving our goals.",
+    description: "We are a focused, and committed to achieving our goals.",
   },
   {
     image: gallery4,
     title: "The Dedicated team ",
-    description: "We are a focused, committed to achieving our goals.",
+    description: "We are a focused, and committed to achieving our goals.",
   },
   {
     image: gallery5,
     title: "The Dedicated team ",
-    description: "We are a focused, committed to achieving our goals.",
+    description: "We are a focused, and committed to achieving our goals.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function GalleryCarousel() {
           <img
             src={images[current].image}
             alt={images[current].title}
-            className="w-fit h-full object-cover m-auto transition-all duration-700"
+            className="w-fit h-full object-cover  transition-all duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/5 flex items-end p-6">
             <div>

@@ -3,6 +3,7 @@ import { MdMenu } from "react-icons/md";
 import { NavLink, Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
+import logo from "../assets/images/mina.logo1.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,8 +11,8 @@ export default function Navbar() {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="container mx-auto flex justify-between items-center py-5 px-16">
-          <div>Minana</div>
+        <div className="container mx-auto flex justify-between items-center py-5 px-16 h-[4rem]">
+          <div><img src= {logo} alt="logo img" /></div>
           <div className="hidden md:block">
             <ul className="flex items-center gap-6">
               <li>

@@ -36,8 +36,8 @@ const gallery = [
 export default function GalleryImages() {
   return (
     <>
-      <div className="w-full md:px-20  md:py-12 px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+      <div className="w-full lg:px-20  md:py-12 px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-8">
           {gallery.map((item, index) => (
             <div
               key={index}

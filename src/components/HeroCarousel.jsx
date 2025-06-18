@@ -1,11 +1,11 @@
 import React from 'react'
-import hero1 from "../assets/images/hero1.png"
-import hero2 from "../assets/images/hero2.png"
+import hero4 from "../assets/images/hero4.png"
+import hero3 from "../assets/images/hero3.jpeg"
 import { useState, useEffect } from 'react'
 
 
 export default function HeroCaruosel({children}) {
-  const images = [hero1, hero2];
+  const images = [hero4, hero3];
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
