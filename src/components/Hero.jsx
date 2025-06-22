@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import HeroCarousel from './HeroCarousel'
+import { Link } from "react-router";
 
 
 
@@ -25,9 +26,11 @@ export default function Hero() {
               <p className="text-white text-base xl:max-w-[500px]">
                 Quality supplier of edible oils in Ghana.
               </p>
-              <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer w-[170px] mt-4">
-                <FaArrowRight /> View Products
-              </button>
+              <Link to="/product">
+                <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer w-[170px] mt-4">
+                  <FaArrowRight /> View Products
+                </button>
+              </Link>
             </div>
           </div>
         </HeroCarousel>

@@ -116,7 +116,7 @@ export default function Navbar() {
                     <span
                       className={`relative ${isActive ? "text-red-500" : ""}`}
                     >
-                      Contact
+                      Get in touch
                       {isActive && (
                         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
                           <div className="w-1 h-1 bg-red-500 rounded-full"></div>

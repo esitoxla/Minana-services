@@ -29,10 +29,9 @@ export default function AboutTeam() {
               Managing Director Philomena Asante.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              We are invested in the well-being and success of our team and in
+              creating a culture of belonging where everyone is welcome and
+              where inclusion and diversity are valued and respected.
             </p>
           </div>
           <div className="w-full md:w-1/2">
@@ -44,7 +43,7 @@ export default function AboutTeam() {
           </div>
         </div>
 
-        {/* Two Images Side-by-Side (Stacks on Small) */}
+        
         <div className="flex flex-col md:flex-row py-12 gap-4">
           <img
             src={gallery4}
@@ -58,24 +57,23 @@ export default function AboutTeam() {
           />
         </div>
 
-        {/* Image + Text (Reversed Order on Small Screens if Desired) */}
+        
         <div className="flex flex-col md:flex-row gap-6 justify-center">
           <div className="w-full md:w-1/2">
             <img
               src={gallery5}
               alt="about image"
-              className="object-cover w-full h-[20rem] md:h-[25rem] rounded-xl"
+              className="object-cover w-full h-[20rem] md:h-[23rem] rounded-xl"
             />
           </div>
           <p className="py-8 text-gray-700 leading-loose w-full md:w-1/2">
-            Dr. Bronner’s Special Operations Team built up Serendipalm and other
-            Dr. Bronner’s organic and fair trade projects and continues to
-            support them. Gero, Rob, Ryan, Les, Julia, Phillip, Ute and Jennifer
-            visit Serendipalm regularly. They provide strategic and financial
-            planning, improvements to process efficiency, production and oil
-            quality, development of regenerative organic agriculture and
-            agroforestry, expansion of the cocoa program and planning for local
-            community development projects.
+            We believe in building a company where every team member, partner,
+            and stakeholder receives a fair share of the rewards. Our commitment
+            goes beyond profit. We are deeply driven by purpose. We strive to
+            create lasting, positive impact in the communities we serve,
+            empowering people, supporting local livelihoods, and contributing to
+            sustainable growth. At the heart of our work is a strong belief in
+            shared success, collaboration, and integrity.
           </p>
         </div>
       </div>

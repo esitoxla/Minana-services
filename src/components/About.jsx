@@ -22,6 +22,17 @@ export default function About() {
           Ashanti, Eastern, and Central regions by providing a reliable market
           for their palm and coconut harvests.
         </p>
+
+        <p>
+          Our aim is to unlock the potential of the local economy by working
+          with rural farmers to grow the finest coconuts and palm fruits. This
+          allows us to produce high-quality, all-natural edible products for
+          customers around the world. We are driven by a relentless passion to
+          meet the needs of tomorrow's market with innovative, forward-thinking
+          products. We remain open and adaptable to whatever the future may
+          bring.
+        </p>
+
         <p>
           Minana Services empowers rural women by supporting their processing
           work and helping them earn sustainable incomes. The company also plans

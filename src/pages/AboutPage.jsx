@@ -9,6 +9,8 @@ export default function AboutPage() {
     <>
       <AboutTeam />
       <AboutPalm/>
+      <AboutCoconut/>
+      <AboutKernel/>
     </>
   );
 }

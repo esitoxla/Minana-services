@@ -49,7 +49,7 @@ const Palm = [
 export default function AboutPalm() {
     return (
       <div className="my-12 px-4 md:px-8 lg:px-16">
-        {/* Section Header */}
+       
         <div className="flex items-center justify-center mb-12">
           <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
           <h1 className="text-2xl uppercase text-red-500 px-4 text-center">
@@ -58,7 +58,7 @@ export default function AboutPalm() {
           <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
         </div>
 
-        {/* Description and Image */}
+        
         <div className="flex flex-col md:flex-row gap-6 justify-center">
           <p className="text-gray-700 leading-loose w-full md:w-1/2 py-8">
             Minana services employs a unique process for the production of our
