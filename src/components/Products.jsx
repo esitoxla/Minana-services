@@ -81,7 +81,7 @@ export default function Products() {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <h2 className="text-lg font-semibold">{product.name}</h2>
-                  <span className="text-red-800 font-bold">
+                  <span className="text-green-500 font-bold">
                     {product.price}
                   </span>
                 </div>

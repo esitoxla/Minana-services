@@ -3,12 +3,12 @@ import about3 from "../assets/images/about3.jpeg";
 import about1 from "../assets/images/about1.jpeg";
 import about4 from "../assets/images/about4.jpeg";
 import about5 from "../assets/images/about5.jpeg";
-import about6 from "../assets/images/about6.png";
-import about7 from "../assets/images/about7.png";
-import about8 from "../assets/images/about8.png";
-import about9 from "../assets/images/about9.png";
-import about10 from "../assets/images/about10.png";
-import about11 from "../assets/images/about11.png";
+import about6 from "../assets/images/about6.jpeg";
+import about7 from "../assets/images/about7.jpeg";
+import about8 from "../assets/images/about8.jpeg";
+import about9 from "../assets/images/about9.jpeg";
+import about10 from "../assets/images/about10.jpeg";
+import about11 from "../assets/images/about11.jpeg";
 
 const Palm = [
   {

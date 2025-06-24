@@ -1,7 +1,7 @@
 import React from "react";
-import coconut2 from "../assets/images/coconut2.png";
-import coconut3 from "../assets/images/coconut3.jpg";
-import coconut4 from "../assets/images/coconut4.jpg";
+import coconut2 from "../assets/images/coconut2.1.png";
+import coconut3 from "../assets/images/coconut3.1.jpg";
+import coconut4 from "../assets/images/coconut4.1.jpg";
 
 export default function AboutCoconut() {
   return (
