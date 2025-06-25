@@ -1,53 +1,45 @@
-import React from 'react'
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from 'react-router';
+import { Link } from "react-router";
+import aboutImg from "../assets/images/hero1.1.png";
 
 export default function About() {
   return (
-    <div className="py-8  md:px-16 lg:px-24 leading-normal px-8 ">
+    <div className="py-8  md:px-16 lg:px-24 leading-normal px-8 bg-gray-50">
       <div className="flex items-center justify-center mb-12">
         <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
         <h1 className="text-2xl  text-red-500 uppercase px-8">About us</h1>
         <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
       </div>
 
-      <div className="flex flex-col gap-6 my-9 text-gray-700 ">
-        <p>
-          Minana Services, founded in 2014, is a palm oil production company
-          engaged in cultivating oil palm and processing palm fruits into crude
-          palm oil (CPO). The company offers a variety of products including
-          palm oil, coconut oil, palm kernel oil, palm stearin, and by-products
-          like palm kernel shells and fiber. With a strong focus on
-          sustainability, Minana Services supports over 150 farmers in the
-          Ashanti, Eastern, and Central regions by providing a reliable market
-          for their palm and coconut harvests.
-        </p>
+      <div className="flex flex-col-reverse md:flex-row w-full gap-5 ">
+        <div className="w-full md:h-[24rem] md:w-1/2 flex flex-col gap-5 px-5 py-3 md:py-5  shadow-sm bg-white bg-base-100 rounded-xl transition-transform duration-300 hover:-translate-y-2">
+          <p className="text-gray-700 md:leading-loose ">
+            Minana Services is a sustainable palm oil company in Ghana that
+            produces palm and coconut-based oils while supporting over 150 rural
+            farmers and women. Founded in 2014, it aims to boost the local
+            economy and plans to expand into eco-friendly products like soaps
+            and biofuels. The company is committed to high-quality, natural
+            products for global markets. Its vision is rooted in innovation,
+            community empowerment, and environmental responsibility.
+          </p>
 
-        <p>
-          Our aim is to unlock the potential of the local economy by working
-          with rural farmers to grow the finest coconuts and palm fruits. This
-          allows us to produce high-quality, all-natural edible products for
-          customers around the world. We are driven by a relentless passion to
-          meet the needs of tomorrow's market with innovative, forward-thinking
-          products. We remain open and adaptable to whatever the future may
-          bring.
-        </p>
+          <Link to="/about">
+            <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer w-[170px] ">
+              {" "}
+              <FaArrowRight /> Learn more
+            </button>
+          </Link>
+        </div>
 
-        <p>
-          Minana Services empowers rural women by supporting their processing
-          work and helping them earn sustainable incomes. The company also plans
-          to expand into value-added products like soaps and biofuels to serve
-          multiple industries while promoting environmentally friendly
-          solutions.
-        </p>
+        <div className="w-full md:w-1/2">
+          <img
+            className="object-cover w-full h-[24rem] rounded-xl"
+            src={aboutImg}
+            alt="product summary"
+          />
+        </div>
       </div>
-
-      <Link to="/about">
-        <button className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer w-[170px] mt-4">
-          {" "}
-          <FaArrowRight /> Learn more
-        </button>
-      </Link>
     </div>
   );
 }

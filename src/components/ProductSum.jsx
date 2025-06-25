@@ -21,7 +21,7 @@ export default function ProductSum() {
           />
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col gap-5 py-5 md:py-0">
+        <div className="w-full md:w-1/2 flex flex-col gap-5 py-5 md:py-0 leading-loose">
           <p className="text-gray-700 ">
             Our range of premium oils includes Crude Palm Oil, Refined Palm Oil,
             Palm Kernel Oil, and Palm Stearin, each processed to meet diverse

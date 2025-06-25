@@ -48,27 +48,30 @@ const Palm = [
 
 export default function AboutPalm() {
     return (
-      <div className="my-12 px-4 md:px-8 lg:px-16">
-       
+      <div className="my-12 px-4 md:px-8 lg:px-16 ">
         <div className="flex items-center justify-center mb-12">
           <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
           <h1 className="text-2xl uppercase text-red-500 px-4 text-center">
-            Palm Oil
+            Our Products
           </h1>
           <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
         </div>
 
-        
         <div className="flex flex-col md:flex-row gap-6 justify-center">
-          <p className="text-gray-700 leading-loose w-full md:w-1/2 py-8">
-            Minana services employs a unique process for the production of our
-            fair trade and organic palm oil. It is modeled after the
-            village-style oil production common in the Ashanti Region of Ghana.
-            It deliberately avoids large-scale plantations and heavy machinery.
-            Everything begins in the fields where our organic palm bunches are
-            harvested and then taken to our oil mill in Juaso. The following
-            gallery provides an overview of our production of red palm oil.
-          </p>
+          <div className="w-full md:w-1/2 py-5 md:px-6 px-3  shadow-sm bg-white bg-base-100 rounded-xl transition-transform duration-300 hover:-translate-y-2">
+            <h2 className="text-2xl pb-5">Palm Oil</h2>
+
+            <p className="text-gray-700 leading-loose ">
+              Minana services employs a unique process for the production of our
+              fair trade and organic palm oil. It is modeled after the
+              village-style oil production common in the Ashanti Region of
+              Ghana. It deliberately avoids large-scale plantations and heavy
+              machinery. Everything begins in the fields where our organic palm
+              bunches are harvested and then taken to our oil mill in Juaso. The
+              following gallery provides an overview of our production of red
+              palm oil.
+            </p>
+          </div>
 
           <div className="w-full md:w-1/2">
             <img

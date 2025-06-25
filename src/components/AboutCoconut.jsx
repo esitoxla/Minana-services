@@ -5,15 +5,7 @@ import coconut4 from "../assets/images/coconut4.1.jpg";
 
 export default function AboutCoconut() {
   return (
-    <div className="my-12 px-4 md:px-8 lg:px-16">
-      <div className="flex items-center justify-center mb-12">
-        <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
-        <h1 className="text-2xl uppercase text-red-500 px-4 text-center">
-          Coconut Oil
-        </h1>
-        <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
-      </div>
-
+    <div className="my-12 px-4 md:px-8 lg:px-16 ">
       <div className="flex flex-col md:flex-row gap-6 justify-center">
         <div className="w-full md:w-1/2">
           <img
@@ -22,15 +14,18 @@ export default function AboutCoconut() {
             className="object-cover w-full h-[20rem] md:h-[20rem] rounded-xl"
           />
         </div>
-        <p className="py-8 text-gray-700 leading-loose w-full md:w-1/2">
-          Coconut oil is extracted from the meat of mature coconuts, using
-          methods like cold pressing for virgin oil or drying and pressing for
-          refined oil. Rich in lauric acid, it offers antimicrobial and
-          moisturizing benefits. It is widely used in cooking, skincare,
-          haircare, and natural health products. Its pleasant flavor, high smoke
-          point, and long shelf life make it a versatile oil for both culinary
-          and cosmetic purposes.
-        </p>
+        <div className="py-4  w-full md:w-1/2 md:px-6 px-3  shadow-sm bg-white bg-base-100 rounded-xl transition-transform duration-300 hover:-translate-y-2">
+          <h2 className="text-2xl pb-5">Coconut Oil</h2>
+          <p className="text-gray-700 leading-loose">
+            Coconut oil is extracted from the meat of mature coconuts, using
+            methods like cold pressing for virgin oil or drying and pressing for
+            refined oil. Rich in lauric acid, it offers antimicrobial and
+            moisturizing benefits. It is widely used in cooking, skincare,
+            haircare, and natural health products. Its pleasant flavor, high
+            smoke point, and long shelf life make it a versatile oil for both
+            culinary and cosmetic purposes.
+          </p>
+        </div>
       </div>
 
       <div className="flex flex-col md:flex-row py-12 gap-4">
