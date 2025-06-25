@@ -58,19 +58,19 @@ const Footer = () => {
           <h3 className="font-bold mb-4">Product Categories</h3>
           <ul className="flex flex-col gap-3">
             <li>
-              <a href="#" className="hover:text-green-400">
+              <Link to="/about/palm" className="hover:text-green-400">
                 Palm oil
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400">
+              <Link to="/about/coconut" className="hover:text-green-400">
                 Coconut oil
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400">
+              <Link to="/about/kernel" className="hover:text-green-400">
                 Palm kernel oil
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
