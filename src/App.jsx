@@ -7,12 +7,12 @@ import Gallery from "./pages/Gallery";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import AboutCompany from "./components/AboutCompany";
 import AboutTeam from "./components/AboutTeam";
 import AboutLayout from "./pages/AboutLayout";
 import AboutCoconut from "./components/AboutCoconut";
 import AboutKernel from "./components/AboutKernel";
 import AboutPalm from "./components/AboutPalm";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
           children: [
             {
               index: true,
-              Component: AboutCompany,
+              Component: AboutPage,
             },
             {
               path: "team",
