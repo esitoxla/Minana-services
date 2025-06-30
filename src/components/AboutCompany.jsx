@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutCompany() {
   return (
-    <div className="py-8  md:px-16 lg:px-24 leading-normal px-8 bg-white">
+    <div className="py-8 px-4  md:px-8 lg:px-16 leading-normal  bg-white">
       <div className="flex items-center justify-center mb-12">
         <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
         <h1 className="text-2xl  text-red-500 uppercase px-8">Our Company</h1>

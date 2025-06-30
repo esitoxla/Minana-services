@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router";
 import {
   FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
-  FaYoutube,
+  FaInstagram,
+  
 } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -18,11 +19,30 @@ const Footer = () => {
             We are currently offering our prompt services in numerous countries
             and utilizing the best resources to boost productivity.
           </p>
-          <div className="flex gap-5 mt-5">
-            <FaFacebookF className="hover:text-green-400 cursor-pointer" />
-            <FaTwitter className="hover:text-green-400 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-green-400 cursor-pointer" />
-            <FaYoutube className="hover:text-green-400 cursor-pointer" />
+          <div className="flex gap-5 mt-5 text-[19px]">
+            <a
+              href="https://www.facebook.com/share/1HhdZcHmv8/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="hover:text-green-400 cursor-pointer" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/minana_edibleoil?igsh=NXc1MjVoNDV5aGR2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-green-400 cursor-pointer" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/minana-services-agric/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="hover:text-green-400 cursor-pointer" />
+            </a>
           </div>
         </div>
 

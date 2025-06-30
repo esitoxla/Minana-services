@@ -1,7 +1,11 @@
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 
+
 export default function ContactDetails() {
+  
+  
+
   return (
     <div className="py-4 px-4 bg-gray-100">
       <div className="px-4 py-10 md:px-8 lg:px-16">
@@ -13,29 +17,43 @@ export default function ContactDetails() {
 
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Contact Form */}
-          <form className="flex flex-col gap-6 w-full lg:w-1/2">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="bg-white w-full h-[50px] px-4 rounded "
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="bg-white w-full h-[50px] px-4 rounded "
-            />
-
-            <textarea
-              placeholder="Your Message"
-              className="bg-white h-[9rem] px-4 py-4 rounded  w-full"
-            />
-            <button
-              className="bg-red-500 w-full sm:w-[170px] px-4 py-2 rounded text-white cursor-pointer 
-                         transition duration-300 hover:scale-105"
+          <div className="w-full lg:w-1/2">
+            <form
+              method="post"
+              action="https://formspree.io/f/myzjoped"
+              className="flex flex-col gap-6 "
             >
-              Send Message
-            </button>
-          </form>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                required
+                className="bg-white w-full h-[50px] px-4 rounded "
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                required
+                className="bg-white w-full h-[50px] px-4 rounded "
+              />
+
+              <textarea
+                placeholder="Message"
+                name="message"
+                className="bg-white h-[9rem] px-4 py-4 rounded  w-full"
+              />
+              <button
+              type="submit"
+                className="bg-red-500 w-full sm:w-[170px] px-4 py-2 rounded text-white cursor-pointer 
+                         transition duration-300 hover:scale-105"
+              >
+                Send Message
+              </button>
+            </form>
+            
+          </div>
 
           {/* Contact Info + Map */}
           <div className="flex flex-col gap-6 w-full lg:w-1/2">

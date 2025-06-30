@@ -39,7 +39,7 @@ export default function GalleryCarousel() {
     useEffect(() => {
         const timer = setInterval(() => {
           setCurrent((prev) => (prev + 1) % images.length);
-        }, 4000);
+        }, 3000);
 
         return () => clearInterval(timer);
     }, [])
@@ -60,7 +60,7 @@ export default function GalleryCarousel() {
           <img
             src={images[current].image}
             alt={images[current].title}
-            className="w-fit h-full object-cover m-auto transition-all duration-700"
+            className="w-fit h-full object-cover m-auto  duration-700 transition-opacity opacity-100"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/5 flex items-end p-6">
             <div>

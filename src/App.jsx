@@ -15,6 +15,9 @@ import AboutPalm from "./components/AboutPalm";
 import AboutPage from "./pages/AboutPage";
 
 
+
+
+
 function App() {
   const router = createBrowserRouter([
     {
