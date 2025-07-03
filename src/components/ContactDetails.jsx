@@ -46,7 +46,7 @@ export default function ContactDetails() {
               />
               <button
               type="submit"
-                className="bg-red-500 w-full sm:w-[170px] px-4 py-2 rounded text-white cursor-pointer 
+                className="bg-green-600 w-full sm:w-[170px] px-4 py-2 rounded text-white cursor-pointer 
                          transition duration-300 hover:scale-105"
               >
                 Send Message
@@ -58,7 +58,7 @@ export default function ContactDetails() {
           {/* Contact Info + Map */}
           <div className="flex flex-col gap-6 w-full lg:w-1/2">
             <div className="flex items-start gap-2">
-              <span className="text-3xl text-red-500">
+              <span className="text-3xl text-green-600">
                 <IoLocationOutline />
               </span>
               <div>

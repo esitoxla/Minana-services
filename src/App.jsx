@@ -13,6 +13,7 @@ import AboutCoconut from "./components/AboutCoconut";
 import AboutKernel from "./components/AboutKernel";
 import AboutPalm from "./components/AboutPalm";
 import AboutPage from "./pages/AboutPage";
+import AdminDashboard from "./pages/AdminDashboard";
 
 
 
@@ -71,6 +72,11 @@ function App() {
           path: "contact",
           Component: Contact,
         },
+        {
+          path: "/admin",
+          Component: AdminDashboard,
+        },
+
       ],
     },
   ]);
