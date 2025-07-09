@@ -1,5 +1,8 @@
 import React from 'react'
 import AdminForm from '../components/AdminForm';
+import AdminProducts from '../components/AdminProducts';
+
+
 
 export default function AdminDashboard() {
   return (
@@ -10,7 +13,8 @@ export default function AdminDashboard() {
         <div className="flex-1 h-0.5 bg-red-300 max-w-xs"></div>
       </div>
 
-      <AdminForm/>
+      
+      <AdminProducts/>
     </div>
   );
 }

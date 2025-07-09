@@ -40,21 +40,21 @@ function App() {
             },
             {
               path: "team",
-              Component: AboutTeam
+              Component: AboutTeam,
             },
             {
               path: "palm",
-              Component: AboutPalm
+              Component: AboutPalm,
             },
             {
               path: "coconut",
-              Component: AboutCoconut
+              Component: AboutCoconut,
             },
             {
               path: "kernel",
-              Component: AboutKernel
+              Component: AboutKernel,
             },
-          ]
+          ],
         },
         {
           path: "product",
@@ -72,12 +72,12 @@ function App() {
           path: "contact",
           Component: Contact,
         },
-        {
-          path: "/admin",
-          Component: AdminDashboard,
-        },
-
       ],
+    },
+
+    {
+      path: "/admin",
+      Component: AdminDashboard,
     },
   ]);
 
