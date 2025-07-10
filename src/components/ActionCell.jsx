@@ -15,7 +15,7 @@ export default function ActionCell({ onDelete, onEdit}) {
         {/* Action Button */}
         <button
           onClick={() => setDropdownOpen((prev) => !prev)}
-          className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"
+          className="bg-gray-200 px-3 py-1 rounded hover:bg-green-500 hover:text-white"
         >
           Action
         </button>
