@@ -14,7 +14,7 @@ import AboutKernel from "./components/AboutKernel";
 import AboutPalm from "./components/AboutPalm";
 import AboutPage from "./pages/AboutPage";
 import AdminDashboard from "./pages/AdminDashboard";
-
+import Cart from "./pages/cart";
 
 
 
@@ -72,6 +72,10 @@ function App() {
           path: "contact",
           Component: Contact,
         },
+        {
+          path : "cart",
+          Component: Cart
+        }
       ],
     },
 

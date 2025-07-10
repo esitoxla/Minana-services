@@ -1,17 +1,29 @@
 import React, { useState, useEffect } from "react";
-import product1 from "../assets/images/cannedPalmoil.jpeg";
-import product2 from "../assets/images/product2.jpeg";
-import product3 from "../assets/images/product3.jpeg";
-import product4 from "../assets/images/product4.jpeg";
-import product5 from "../assets/images/product5.jpeg";
-import product6 from "../assets/images/product6.jpeg";
-import product7 from "../assets/images/product7.jpeg";
-import product8 from "../assets/images/product8.jpeg";
+import { useContext } from "react";
+import { CartContext } from "../helpers/contextSetUp";
+import { HashNavigation } from "swiper/modules";
+import { NavLink } from "react-router";
+// import product1 from "../assets/images/cannedPalmoil.jpeg";
+// import product2 from "../assets/images/product2.jpeg";
+// import product3 from "../assets/images/product3.jpeg";
+// import product4 from "../assets/images/product4.jpeg";
+// import product5 from "../assets/images/product5.jpeg";
+// import product6 from "../assets/images/product6.jpeg";
+// import product7 from "../assets/images/product7.jpeg";
+// import product8 from "../assets/images/product8.jpeg";
 
 export default function Products() {
+const {cart, addToCart} = useContext(CartContext);
+  console.log(cart);
+
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const inCart = (product) => {
+
+    return cart.some((item) => item.id === product.id);
+  }
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/products`)
@@ -49,13 +61,16 @@ export default function Products() {
           {products.map((product) => (
             <div
               key={product._id}
-              className="bg-white shadow-md rounded-xl overflow-hidden transition-transform hover:-translate-y-1"
+              className="bg-white shadow-md shadow-gray-300 rounded-xl overflow-hidden transition-transform hover:-translate-y-1 relative"
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-70 object-contain"
               />
+              <div className="absolute top-2 right-2 bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">
+                <span>Instock</span>
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <h2 className="text-lg font-semibold">{product.name}</h2>
@@ -63,9 +78,18 @@ export default function Products() {
                     GH₵ {product.price}
                   </span>
                 </div>
-                <button className="w-full bg-gray-100 hover:bg-gray-200 text-sm text-gray-800 py-2 px-4 rounded-md transition">
+                <div className="flex justify-between items-center mt-4 mb-4">
+                  {inCart(product) ? <NavLink to="/cart"><button className="w-fit  bg-white border border-green-700 text-green-700 hover:bg-green-100 text-sm py-2 px-4 rounded-md transition font-semibold">
+                    Go to cart </button> </NavLink>:
+                  <button className="w-2/5 bg-green-800 cursor-pointer hover:bg-green-900 text-white text-sm py-2 px-4 rounded-md transition" 
+                  onClick={() => addToCart(product)}
+                  >
+                    Add to Cart
+                  </button>}
+                <button className="w-2/5 bg-gray-200 hover:bg-gray-300 text-sm text-gray-800 py-2 px-4 rounded-md transition">
                   Learn More
                 </button>
+                </div>
               </div>
             </div>
           ))}

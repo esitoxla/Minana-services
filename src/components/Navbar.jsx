@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import { NavLink, Link } from "react-router";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
-import logo from "../assets/images/mina.logo1.png"
+import logo from "../assets/images/mina.logo1.png";
+import { MdShoppingCartCheckout } from "react-icons/md";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -118,6 +119,24 @@ export default function Navbar() {
                     >
                       Get in touch
                       {isActive && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                        </div>
+                      )}
+                    </span>
+                  )}
+                </NavLink>
+              </li>
+              <li >
+                <NavLink to="/cart" className="flex items-center gap-2">
+                 {({ isActive }) => (
+                    <span
+                      className={`relative ${isActive ? "text-red-500" : ""} flex items-center gap-2`}
+                    >
+                  <MdShoppingCartCheckout /> Cart
+                 {isActive && (
                         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
                           <div className="w-1 h-1 bg-red-500 rounded-full"></div>
                           <div className="w-1 h-1 bg-red-500 rounded-full"></div>
