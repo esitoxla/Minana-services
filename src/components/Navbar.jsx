@@ -13,7 +13,9 @@ export default function Navbar() {
     <>
       <nav className="sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto flex justify-between items-center py-5 px-16 h-[4rem]">
-          <div><img src= {logo} alt="logo img" /></div>
+          <div>
+            <img src={logo} alt="logo img" />
+          </div>
           <div className="hidden md:block">
             <ul className="flex items-center gap-6">
               <li>
@@ -129,14 +131,16 @@ export default function Navbar() {
                   )}
                 </NavLink>
               </li>
-              <li >
+              <li>
                 <NavLink to="/cart" className="flex items-center gap-2">
-                 {({ isActive }) => (
+                  {({ isActive }) => (
                     <span
-                      className={`relative ${isActive ? "text-red-500" : ""} flex items-center gap-2`}
+                      className={`relative ${
+                        isActive ? "text-red-500" : ""
+                      } flex items-center gap-2`}
                     >
-                  <MdShoppingCartCheckout /> Cart
-                 {isActive && (
+                      <MdShoppingCartCheckout /> Cart
+                      {isActive && (
                         <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
                           <div className="w-1 h-1 bg-red-500 rounded-full"></div>
                           <div className="w-1 h-1 bg-red-500 rounded-full"></div>
@@ -161,7 +165,7 @@ export default function Navbar() {
 
         <AnimatePresence mode="wait">
           {open && (
-            <motion.div
+            <div
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -100 }}
@@ -205,9 +209,18 @@ export default function Navbar() {
                       Contact
                     </Link>
                   </li>
+
+                  <li>
+                    <Link to="/cart" onClick={() => setOpen(false)}>
+                      <span className="flex gap-2 items-center font-medium">
+                        {" "}
+                        <MdShoppingCartCheckout /> Cart
+                      </span>
+                    </Link>
+                  </li>
                 </ul>
               </div>
-            </motion.div>
+            </div>
           )}
         </AnimatePresence>
       </nav>
