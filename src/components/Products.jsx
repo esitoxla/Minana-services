@@ -3,14 +3,8 @@ import { useContext } from "react";
 import { CartContext } from "../helpers/contextSetUp";
 import { HashNavigation } from "swiper/modules";
 import { NavLink } from "react-router";
-// import product1 from "../assets/images/cannedPalmoil.jpeg";
-// import product2 from "../assets/images/product2.jpeg";
-// import product3 from "../assets/images/product3.jpeg";
-// import product4 from "../assets/images/product4.jpeg";
-// import product5 from "../assets/images/product5.jpeg";
-// import product6 from "../assets/images/product6.jpeg";
-// import product7 from "../assets/images/product7.jpeg";
-// import product8 from "../assets/images/product8.jpeg";
+
+
 
 export default function Products() {
 const {cart, addToCart} = useContext(CartContext);
@@ -79,16 +73,26 @@ const {cart, addToCart} = useContext(CartContext);
                   </span>
                 </div>
                 <div className="flex justify-between items-center mt-4 mb-4">
-                  {inCart(product) ? <NavLink to="/cart"><button className="w-fit  bg-white border border-green-700 text-green-700 hover:bg-green-100 text-sm py-2 px-4 rounded-md transition font-semibold">
-                    Go to cart </button> </NavLink>:
-                  <button className="w-2/5 bg-green-800 cursor-pointer hover:bg-green-900 text-white text-sm py-2 px-4 rounded-md transition" 
-                  onClick={() => addToCart(product)}
-                  >
-                    Add to Cart
-                  </button>}
-                <button className="w-2/5 bg-gray-200 hover:bg-gray-300 text-sm text-gray-800 py-2 px-4 rounded-md transition">
-                  Learn More
-                </button>
+                  {inCart(product) ? (
+                    <NavLink to="/cart">
+                      <button className="w-fit  bg-white border border-green-700 text-green-700 hover:bg-green-100 text-sm py-2 px-4 rounded-md transition font-semibold">
+                        Go to cart{" "}
+                      </button>{" "}
+                    </NavLink>
+                  ) : (
+                    <button
+                      className=" bg-green-800 cursor-pointer hover:bg-green-900 text-white text-sm py-2 px-4 rounded-md transition"
+                      onClick={() => addToCart(product)}
+                    >
+                      Add to Cart
+                    </button>
+                  )}
+
+                  <NavLink to="/about">
+                    <button className=" bg-gray-200 hover:bg-gray-300 text-sm text-gray-800 py-2 px-4 rounded-md transition">
+                      Learn More
+                    </button>
+                  </NavLink>
                 </div>
               </div>
             </div>
