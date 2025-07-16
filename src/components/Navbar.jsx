@@ -5,9 +5,11 @@ import { AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
 import logo from "../assets/images/mina.logo1.png";
 import { MdShoppingCartCheckout } from "react-icons/md";
+import { useAuth } from "../helpers/AuthContext";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { isAdmin} = useAuth();
 
   return (
     <>
@@ -151,6 +153,29 @@ export default function Navbar() {
                   )}
                 </NavLink>
               </li>
+
+              {isAdmin && (
+                <li>
+                  <NavLink to="/admin">
+                    {({ isActive }) => (
+                      <span
+                        className={`relative ${
+                          isActive ? "text-red-500" : ""
+                        } font-semibold`}
+                      >
+                        Admin
+                        {isActive && (
+                          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                          </div>
+                        )}
+                      </span>
+                    )}
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </div>
           {/* hamburgar */}
@@ -218,6 +243,14 @@ export default function Navbar() {
                       </span>
                     </Link>
                   </li>
+
+                  {isAdmin && (
+                    <li>
+                      <Link to="/admin" onClick={() => setOpen(false)}>
+                        Admin
+                      </Link>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>

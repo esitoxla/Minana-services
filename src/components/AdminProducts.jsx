@@ -122,9 +122,9 @@ export default function AdminProducts() {
     <>
       <div className="mt-10">
         <h2 className="text-2xl text-center mb-4">Products</h2>
-        <table className="min-w-full border border-gray-300">
+        <table className="min-w-full ">
           <thead>
-            <tr className="bg-gray-100 ">
+            <tr className=" ">
               <th className="border p-2">Name</th>
               <th className="border p-2">Price</th>
               <th className="border p-2">In Stock</th>

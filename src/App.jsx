@@ -15,6 +15,9 @@ import AboutPalm from "./components/AboutPalm";
 import AboutPage from "./pages/AboutPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import Cart from "./pages/Cart"
+import CartLayout from "./pages/CartLayout";
+import Checkout from "./components/Checkout";
+import PaymentSuccess from "./components/PaymentSuccess";
 
 
 
@@ -73,15 +76,28 @@ function App() {
           Component: Contact,
         },
         {
-          path : "cart",
-          Component: Cart
-        }
+          path: "cart",
+          Component: CartLayout,
+          children: [
+            {
+              index: true,
+              Component: Cart,
+            },
+            {
+              path: "checkout",
+              Component: Checkout,
+            },
+            {
+              path: "payment",
+              Component: PaymentSuccess,
+            },
+          ],
+        },
+        {
+          path: "/admin",
+          Component: AdminDashboard,
+        },
       ],
-    },
-
-    {
-      path: "/admin",
-      Component: AdminDashboard,
     },
   ]);
 
