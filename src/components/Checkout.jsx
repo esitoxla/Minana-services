@@ -41,29 +41,26 @@ const Checkout = () => {
 
   return (
     <>
-      <div className="w-full h-[30rem] bg-green-300 flex items-center">
-        <div className="flex flex-col items-center gap-10  bg-green-500 rounded-xl shadow-md lg:w-[50%] max-w-sm h-[80%] mx-auto  transition-transform duration-300 hover:-translate-y-2 px-4">
-          <h2 className="pt-6 text-white text-2xl font-bold">Checkout</h2>
-          <div className="flex flex-col ">
-            <label htmlFor="" className="text-white">
-              Email
-            </label>
+      <div className="w-full min-h-screen bg-green-300 flex items-center justify-center px-4 py-10">
+        <div className="flex flex-col items-center gap-10 bg-green-500 rounded-xl shadow-md w-full max-w-md md:max-w-lg lg:max-w-xl p-6 transition-transform duration-300 hover:-translate-y-2">
+          <h2 className="text-white text-2xl font-bold">Make Payment</h2>
+
+          <div className="flex flex-col w-full">
+            <label className="text-white mb-1">Email</label>
             <input
               type="email"
-              className="bg-white px-6 py-2 rounded"
+              className="bg-white px-4 py-2 rounded"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
-          <div className="flex flex-col">
-            <label htmlFor="" className="text-white">
-              Amount (GHS)
-            </label>
+          <div className="flex flex-col w-full">
+            <label className="text-white mb-1">Amount (GHS)</label>
             <input
               type="number"
               placeholder="Amount (GHS)"
-              className="bg-white px-6 py-2 rounded"
+              className="bg-white px-4 py-2 rounded"
               value={amount}
               readOnly
             />
@@ -71,7 +68,7 @@ const Checkout = () => {
 
           <button
             onClick={handlePayment}
-            className="bg-green-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-green-500 hover:border-white hover:border "
+            className="bg-green-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-green-500 hover:border-white hover:border w-full"
           >
             Pay Now
           </button>
