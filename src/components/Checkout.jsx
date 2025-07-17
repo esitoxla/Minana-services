@@ -41,7 +41,7 @@ const Checkout = () => {
 
   return (
     <>
-      <div className="w-full min-h-screen bg-green-300 flex items-center justify-center px-4 py-8">
+      <div className="w-full bg-green-300 flex items-center justify-center px-4 py-8">
         <div className="flex flex-col items-center gap-10 bg-green-500 rounded-xl shadow-md w-full max-w-md md:max-w-lg lg:max-w-xl p-6 transition-transform duration-300 hover:-translate-y-2">
           <h2 className="text-white text-2xl font-bold">Make Payment</h2>
 
