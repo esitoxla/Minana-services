@@ -153,27 +153,6 @@ export default function Navbar() {
                   )}
                 </NavLink>
               </li>
-
-              <li>
-                <NavLink to="/admin-access">
-                  {({ isActive }) => (
-                    <span
-                      className={`relative ${
-                        isActive ? "text-red-500" : ""
-                      } font-semibold`}
-                    >
-                      Admin
-                      {isActive && (
-                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
-                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
-                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
-                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
-                        </div>
-                      )}
-                    </span>
-                  )}
-                </NavLink>
-              </li>
             </ul>
           </div>
           {/* hamburgar */}
@@ -239,12 +218,6 @@ export default function Navbar() {
                         {" "}
                         <MdShoppingCartCheckout /> Cart
                       </span>
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link to="/admin-access" onClick={() => setOpen(false)}>
-                      Admin
                     </Link>
                   </li>
                 </ul>

@@ -44,7 +44,7 @@ export default function Cart() {
               </button>
               <div className="flex items-center justify-between flex-col mb-10">
                 <span className="text-lg mr-4 font-semibold">
-                  Total: $
+                  Total: GH₵
                   {cart
                     .reduce(
                       (total, item) => total + item.price * item.quantity,
