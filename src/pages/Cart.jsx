@@ -26,7 +26,7 @@ export default function Cart() {
           <p className="text-center text-gray-500">Your cart is empty</p>
         ) : (
           <div className="space-y-4 ">
-            <div className="flex mt-10 items-center lg:justify-between gap-5 lg:p-4 p-2 border-b border-gray-200">
+            <div className="flex mt-10 items-center lg:gap-16 gap-6 md:gap-12 lg:p-4 p-2 border-b border-gray-200">
               <p className="uppercase w-[25%] ">Product</p>
               <p className="uppercase w-[15%] ">Price</p>
               <p className="uppercase w-[15%] ">QTY</p>

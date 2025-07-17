@@ -18,6 +18,8 @@ import Cart from "./pages/Cart"
 import CartLayout from "./pages/CartLayout";
 import Checkout from "./components/Checkout";
 import PaymentSuccess from "./components/PaymentSuccess";
+import AdminRoute from "./components/AdminRoute";
+import AdminAccess from "./pages/AdminAccess";
 
 
 
@@ -94,8 +96,16 @@ function App() {
           ],
         },
         {
+          path: "/admin-access",
+          Component: AdminAccess,
+        },
+        {
           path: "/admin",
-          Component: AdminDashboard,
+          Component: () => (
+            <AdminRoute>
+              <AdminDashboard />
+            </AdminRoute>
+          ),
         },
       ],
     },

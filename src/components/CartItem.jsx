@@ -9,7 +9,7 @@ function CartItem({product}) {
     const {removeFromCart, increaseQuantity, decreaseQuantity} = useContext(CartContext);
   return (
     <div className="flex items-center justify-between gap-2 p-2 border-b border-gray-200 text-sm">
-      <div className="w-[30%] flex items-center">
+      <div className="w-[25%] flex items-center">
         <img
           src={product.image}
           alt={product.name}

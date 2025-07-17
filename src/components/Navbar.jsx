@@ -9,7 +9,7 @@ import { useAuth } from "../helpers/AuthContext";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const { isAdmin} = useAuth();
+  const { isAdmin } = useAuth();
 
   return (
     <>
@@ -154,28 +154,26 @@ export default function Navbar() {
                 </NavLink>
               </li>
 
-              {isAdmin && (
-                <li>
-                  <NavLink to="/admin">
-                    {({ isActive }) => (
-                      <span
-                        className={`relative ${
-                          isActive ? "text-red-500" : ""
-                        } font-semibold`}
-                      >
-                        Admin
-                        {isActive && (
-                          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
-                            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
-                            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
-                            <div className="w-1 h-1 bg-red-500 rounded-full"></div>
-                          </div>
-                        )}
-                      </span>
-                    )}
-                  </NavLink>
-                </li>
-              )}
+              <li>
+                <NavLink to="/admin-access">
+                  {({ isActive }) => (
+                    <span
+                      className={`relative ${
+                        isActive ? "text-red-500" : ""
+                      } font-semibold`}
+                    >
+                      Admin
+                      {isActive && (
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                          <div className="w-1 h-1 bg-red-500 rounded-full"></div>
+                        </div>
+                      )}
+                    </span>
+                  )}
+                </NavLink>
+              </li>
             </ul>
           </div>
           {/* hamburgar */}
@@ -244,13 +242,11 @@ export default function Navbar() {
                     </Link>
                   </li>
 
-                  {isAdmin && (
-                    <li>
-                      <Link to="/admin" onClick={() => setOpen(false)}>
-                        Admin
-                      </Link>
-                    </li>
-                  )}
+                  <li>
+                    <Link to="/admin-access" onClick={() => setOpen(false)}>
+                      Admin
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
