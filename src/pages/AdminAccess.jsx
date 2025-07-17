@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useAuth } from "../helpers/AuthContext";
-import { div } from "framer-motion/client";
+
 
 export default function AdminAccess() {
   const [code, setCode] = useState("");
@@ -23,13 +23,13 @@ export default function AdminAccess() {
   return (
     <div className="bg-green-200 flex items-center justify-center h-[16rem]">
       <form onSubmit={handleSubmit} className="p-8">
-        <h1 className="text-xl mb-4">Enter Admin Code</h1>
+        <h1 className="text-xl mb-2">Enter Admin Code</h1>
         <input
           type="password"
           value={code}
           onChange={(e) => setCode(e.target.value)}
           placeholder="Enter admin code"
-          className="border px-4 py-2 rounded"
+          className="border px-4 py-2 rounded m-2"
         />
         <button
           type="submit"
